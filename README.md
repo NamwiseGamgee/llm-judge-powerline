@@ -48,8 +48,8 @@ This work uses the **TTPLA** aerial powerline dataset.
 Two evaluation sets are used:
 
 1. **Clean test overlays**
-   - Generated from the original TTPLA test images.
-   - Used for repeatability experiments.
+   - The original TTPLA test images.
+   - Used for training the base UNet model.
 
 2. **Challenge set**
    - Built from the TTPLA test images.
