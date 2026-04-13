@@ -49,7 +49,7 @@ Two evaluation sets are used:
 
 1. **Clean test overlays**
    - The original TTPLA test images.
-   - Used for training the base UNet model.
+   - Used for training the base U-Net model.
 
 2. **Challenge set**
    - Built from the TTPLA test images.
@@ -81,7 +81,7 @@ In the paper, the challenge-set corruptions were generated using **Albumentation
 
 ### 3.1 Segmentation preprocessing
 
-The segmentation model is trained on TTPLA images and labels using the preprocessing defined in the training code.
+The segmentation model is trained on TTPLA images and labels.
 
 ### 3.2 Challenge-set generation
 
@@ -121,7 +121,7 @@ The judging scripts also support:
 
 The repeatability script explicitly supports `gpt-4o`, `gemini-1.5-pro`
 
-## 5. Training / fine-tuning procedure
+## 5. Training/fine-tuning procedure
 
 ### 5.1 Segmentation model training
 
@@ -153,4 +153,4 @@ pip install numpy pandas scipy matplotlib pillow openai google-generativeai albu
 ```
 ### Run exp1_repeatability_5runs.py on the overlay images to execute the LLM judge five times under identical settings and generate the repeatability metrics.
 
-### Run exp3_judge_and_aggregate.py on the corrupted challenge-set overlays to produce condition-wise CSV outputs, then run analyze_sensitivity_sectionB.py to compute the sensitivity statistics used for Table II and the corresponding robustness plots across corruption types and severity levels.
+### Run exp3_judge_and_aggregate.py on the corrupted challenge-set overlays to produce condition-wise CSV outputs, then run analyze_sensitivity_sectionB.py to compute the sensitivity statistics and the corresponding robustness plots across corruption types and severity levels.
