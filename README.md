@@ -151,6 +151,16 @@ Create a Python environment and install the required packages.
 ```
 pip install numpy pandas scipy matplotlib pillow openai google-generativeai albumentations
 ```
+### Run the U-Net model on clean TTPLA images.
+
+### Make corruption set based on the TTPLA test split (use the makecorruptionSet.py script).
+
+### Run inference on the corruption set.
+
+### Create segmentation overlays.
+
 ### Run exp1_repeatability_5runs.py on the overlay images to execute the LLM judge five times under identical settings and generate the repeatability metrics.
 
-### Run exp3_judge_and_aggregate.py on the corrupted challenge-set overlays to produce condition-wise CSV outputs, then run analyze_sensitivity_sectionB.py to compute the sensitivity statistics and the corresponding robustness plots across corruption types and severity levels.
+### Run exp3_judge_and_aggregate.py on the corrupted challenge-set overlays to produce condition-wise CSV outputs.
+
+### Run analyze_sensitivity_sectionB.py to compute the sensitivity statistics and the corresponding robustness plots across corruption types and severity levels.
