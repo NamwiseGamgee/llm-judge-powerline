@@ -9,7 +9,7 @@ The experimental pipeline consists of four stages:
 
 1. Train a **U-Net with a ResNet34 backbone** on the **TTPLA** training split.
 2. Build a **challenge set** from the **TTPLA test split** by applying controlled corruptions (`fog`, `rain`, `snow`, `shadow`, `sunflare`) at three severity levels.
-3. Run the trained U-Net on both clean and corrupted test images, then create **red semi-transparent segmentation overlays**.
+3. Get inference from the trained U-Net on corrupted test images, then create **red semi-transparent segmentation overlays**.
 4. Evaluate the overlays with an **LLM-as-Judge** using a fixed prompt and analyze:
    - **Repeatability / stability**
    - **Sensitivity under controlled corruptions**
