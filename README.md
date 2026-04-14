@@ -53,7 +53,7 @@ For both clean and corrupted test images:
 Run `exp1_repeatability_5runs.py` on the overlay images to execute the LLM judge five times under identical settings and generate the repeatability metrics reported in Tables I(a–f), including score agreement, confidence stability, ICC(1,1), pairwise correlations, and text-overlap statistics.
 
 ### Section B — Sensitivity
-Run `exp3_judge_and_aggregate.py` on the corrupted challenge-set overlays to generate condition-wise CSV outputs, then run `analyze_sensitivity_sectionB.py` to compute the sensitivity statistics used for Table II and the corresponding robustness plots across corruption types and severity levels.
+Run `judge_and_aggregate.py` on the corrupted challenge-set overlays to generate condition-wise CSV outputs, then run `analyze_sensitivity.py` to compute the sensitivity statistics used for Table II and the corresponding robustness plots across corruption types and severity levels.
 
 ## Environment Setup
 
