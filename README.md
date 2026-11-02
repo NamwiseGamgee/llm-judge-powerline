@@ -1,3 +1,4 @@
+Read the paper: https://arxiv.org/pdf/2604.05371
 # llm-judge-powerline
 # LLM-as-Judge for Semantic Judging of Powerline Segmentation in UAV Inspection
 
